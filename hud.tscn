@@ -1,7 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://dtl4fl561e3on"]
+[gd_scene load_steps=6 format=3 uid="uid://dtl4fl561e3on"]
 
 [ext_resource type="Script" path="res://HUD.gd" id="1_dqi4k"]
 [ext_resource type="FontFile" uid="uid://cfj8tpykrlm8l" path="res://fonts/Xolonium-Regular.ttf" id="2_ht02p"]
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_c2dca"]
+color = Color(1, 0, 0, 1)
 
 [sub_resource type="InputEventAction" id="InputEventAction_0v6l5"]
 action = &"start_game"
@@ -61,6 +64,7 @@ grow_horizontal = 2
 grow_vertical = 0
 theme_override_fonts/font = ExtResource("2_ht02p")
 theme_override_font_sizes/font_size = 64
+theme_override_styles/normal = SubResource("StyleBoxLine_c2dca")
 shortcut = SubResource("Shortcut_w8wfm")
 text = "Start"
 
